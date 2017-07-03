@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Видео</title>
+<meta charset="UTF-8">
+        <meta name="description" content="описание сайта">
+        <meta name="keywords" content="ключевые слова для поиска браузером">
+        <meta name="author" content="Tatiana Panchenko">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="main3.css">
+		<link href="C:\Users\Saha\Desktop\final project\coock.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<style>
+body{ 
+	background: url(variant_4.jpg) no-repeat;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	
+}
+@-webkit-keyframes flicker {
+  50% {background-size: 7px 7px, 3px 3px;}
+  100% {background-size: 3px 3px, 7px 7px;}
+}
+@keyframes flicker {
+  50% {background-size: 7px 7px, 3px 3px;}
+  100% {background-size: 3px 3px, 7px 7px;}
+}
+#blink3 {
+  position: relative;
+  font-weight: bold;
+  color: #30084f;
+}
+#blink3:before {
+  content: "";
+  position:absolute; top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255,255,255,1) 1px, rgba(255,255,255,0) 1px), radial-gradient(rgba(255,255,255,1) 1px, rgba(255,255,255,0) 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0% 50%;
+  -webkit-animation: flicker .5s linear infinite alternate;
+  animation: flicker .5s linear infinite alternate;
+}
+#blink1 {
+  -webkit-animation: blink1 3s linear infinite;
+  animation: blink1 3s linear infinite;
+}
+@-webkit-keyframes blink1 {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+@keyframes blink1 {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+</style>
+
+<body style="background-attachment:fixed" topmargin="0">
+
+<h1 id="blink3" align="center">Готовим вместе!</h1><br>
+<h2 id="blink1" align="center"><em>Приятного просмотра</em></h2>
+
+<div id="top_menu">
+            <span class="top_menu_button"><a href = "C:\Users\Saha\Desktop\final project\saytik.html">Главная</a></span>
+            <span class="top_menu_button"><a href = "C:\Users\Saha\Desktop\final project\ektor.html">О шеф-поваре</a></span>
+            <span class="top_menu_button"><a href = "C:\Users\Saha\Desktop\final project\recipe_book.html">Рецепт</a></span>
+            <span class="top_menu_button"><a href = "C:\Users\Saha\Desktop\final project\video.html">Видео</a></span>
+			
+</div>
+<iframe class="vi" width="854" height="480" src="https://www.youtube.com/embed/aJqfBVkpcIg" frameborder="0" allowfullscreen></iframe>
+        
+</body>
+</html>
+
+
+
